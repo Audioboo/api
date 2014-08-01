@@ -9,15 +9,13 @@ For example, if you're trying to access a list of clips a user is following, you
 
 `http://api.audioboo.fm/users/12/audio_clips/followed`
 
-where 12 is the id of the user you're interested in.  See [Response Encoding](https://github.com/audioboo/api/blob/master/sections/request_formats.md#response-encoding) below to find out what encodings we can use in responses.
+where 12 is the id of the user you're interested in.
 
 If you were trying to upload a clip to the linked user, you'd make a HTTP `POST` to:
 `http://api.audioboo.fm/account/audio_clips`
 
 ## Standard Parameters ##
-To enable us to track what version of the API specification you have used to write your application, you should always include a `version` parameter along with the parameters of the API you are calling.
-
-The current value of `version` is 200. If your app uses a version number that is no longer supported by the server, the server will respond with an appropriate error.
+You should always include a `version` parameter in your Accept header, to maintain compatibility when we update the API.  The current public version is `1`.  For example, `Accept: application/json; version=1`.
 
 ## Request Parameter Encoding ##
 Parameters required by the API call can be submitted in one of a few ways:
@@ -30,16 +28,10 @@ Parameters required by the API call can be submitted in one of a few ways:
  _NOTE:_ multipart/form-data _must_ be used when posting large fields, such as an uploaded audio-file.
 
 ## Response Encoding ##
-We have internally simplified returned data into series of hashes, arrays and basic data types that can be easily represented in a variety of encoding formats.  You can request a particular format using the HTTP Accept header, or by specifying the extension in the URI.  By default, json will be returned.
-
-Thus, both the following commands are equivalent:
-```
-  curl http://api.audioboo.fm/audio_clips.xml
-  curl -H"Accept: application/xml" http://api.audioboo.fm/audio_clips
-```
+JSON is used as the default response type, other formats have been deprecated/
 
 ###Examples:
-`curl http://api.audioboo.fm/audio_clips.json`
+`curl http://api.audioboo.fm/audio_clips`
 
 ```json
 {
@@ -77,53 +69,6 @@ Thus, both the following commands are equivalent:
             }
 			...
 ```
-
-`curl http://api.audioboo.fm/audio_clips.xml`
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<audioboo>
-  <window type="integer">60</window>
-  <version type="integer">200</version>
-  <timestamp type="integer">1353244551</timestamp>
-  <body>
-    <audio_clips type="array">
-      <audio_clip>
-        <id type="integer">12345</id>
-        <title>New Romney Beach</title>
-        <duration type="float">136.2</duration>
-        <uploaded_at type="datetime">2009-04-29T20:22:29Z</uploaded_at>
-        <recorded_at type="datetime">2009-04-29T16:28:14Z</recorded_at>
-        <location>
-          <description>Ashford, Kent, United Kingdom</description>
-          <longitude type="float">0.869696</longitude>
-          <latitude type="float">51.1245</latitude>
-          <accuracy type="float">70.0</accuracy>
-        </location>
-        <urls>
-          <detail>http://audioboo.fm/boos/12345-new-romney-beach</detail>
-          <high_mp3>http://audioboo.fm/boos/12345-new-romney-beach.mp3</high_mp3>
-          <image>http://audioboo.fm/files/images/0004/4474/clipAttachment.jpg</image>
-        </urls>
-        <tags type="array">
-          <tag>
-            <display_tag>beach</display_tag>
-            <normalised_tag>beach</normalised_tag>
-            <url>http://audioboo.fm/tag/beach</url>
-          </tag>
-          <tag>
-            <display_tag>summer</display_tag>
-            <normalised_tag>summer</normalised_tag>
-            <url>http://audioboo.fm/tag/summer</url>
-          </tag>
-        </tags>
-      </audio_clip>
-	  ...
-```
-
-
-We currently support  [json](http://en.wikipedia.org/wiki/JSON), [jsonp](http://en.wikipedia.org/wiki/JSON#JSONP),  [xml](http://en.wikipedia.org/wiki/XML), and [yaml](http://en.wikipedia.org/wiki/YAML).
-
 
 _NOTE:_ If you use JSON-P, you also need to supply a `callback` parameter which is used as the wrapper function when the data is returned.
 
