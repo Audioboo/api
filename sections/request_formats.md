@@ -7,12 +7,12 @@ Being a REST-style API, all calls are made to paths based on the resource you're
 
 For example, if you're trying to access a list of clips a user is following, you'll make HTTP `GET` request to:
 
-`http://api.audioboo.fm/users/12/audio_clips/followed`
+`https://api.audioboo.fm/users/12/audio_clips/followed`
 
 where 12 is the id of the user you're interested in.
 
 If you were trying to upload a clip to the linked user, you'd make a HTTP `POST` to:
-`http://api.audioboo.fm/account/audio_clips`
+`https://api.audioboo.fm/account/audio_clips`
 
 ## Standard Parameters ##
 You should always include a `version` parameter in your Accept header, to maintain compatibility when we update the API.  The current public version is `1`.  For example, `Accept: application/json; version=1`.
@@ -31,7 +31,7 @@ Parameters required by the API call can be submitted in one of a few ways:
 JSON is used as the default response type, other formats have been deprecated/
 
 ###Examples:
-`curl http://api.audioboo.fm/audio_clips`
+`curl https://api.audioboo.fm/audio_clips`
 
 ```json
 {
