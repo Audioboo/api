@@ -5,12 +5,12 @@
 These return [paginated](https://github.com/audioboo/api/blob/master/sections/pagination.md) responses.
 
  * `GET /audio_clips`
-  returns all boos in chronological order (most recent first)
+  returns all audio clips in chronological order (most recent first)
  * `GET /audio_clips?find[query]=*query*`
-  searches for boos matching the *query* search term.
-  returns all boos in chronological order (most recent first)
+  searches for audio clips matching the *query* search term.
+  returns all audio clips in chronological order (most recent first)
  * `GET /audio_clips/featured`
-  returns the editorially "featured" boos as appear on the web-site
+  returns the editorially "featured" audio clips as appear on the web-site
  * `GET /audio_clips/popular`
   returns the most popular audio clips ordered by recent listens
 
@@ -19,7 +19,7 @@ This call will return a [paginated](https://github.com/audioboo/api/blob/master/
 
  * `GET /tag/*tag*/audio_clips`
   returns all the audio clips tagged with the specified tag.
-  
+
 ###User's audio clips###
 These calls will return [paginated](https://github.com/audioboo/api/blob/master/sections/pagination.md) responses.
 
@@ -43,26 +43,26 @@ These calls will return [paginated](https://github.com/audioboo/api/blob/master/
 
 ### Channel's clips ###
 
-`GET /channels/*channel_id*/audio_clips` returns boos for that particular channel.
+`GET /channels/*channel_id*/audio_clips` returns audio clips for that particular channel.
 
 
 
 ### Clips by location ###
 
 #### Filtering for clips with location ####
-There is a feed of boos restricted only to those with a public location, which may be useful for generating maps of boos, etc.
+There is a feed of audio clips restricted only to those with a public location, which may be useful for generating maps of audio clips, etc.
 This can be accessed using a call to the URL:
 
  * `GET /audio_clips/located`
 
 #### Search by distance from point ####
-If you want to get a list of boos increasing near a specific long/lat point you can call this:
+If you want to get a list of audio clips increasing near a specific long/lat point you can call this:
 
  * `GET /audio_clips/located?find[latitude]=*latitude*&find[longitude]=*longitude*`
 
 The results will be ordered by a function of recentness and closeness to the given point.
 
-#### Search for boos "nearby" ####
+#### Search for audio clips "nearby" ####
 You can search for clips nearby another clip:
 
  * `GET /audio_clips/*clip_id*/nearby`
@@ -106,13 +106,13 @@ Then it will produce a KML with a tour of the most recent clips.
 
 this will post an audio clip into the recent clips of the user linked to the OAuth access token used.
 
-To post to a channel, you can use 
+To post to a channel, you can use
 
 `POST /channels/*channel_id*/audio_clips`
 
 which will post an audio clip to the specified channel.
 
-The same parameters are used for either endpoint: 
+The same parameters are used for either endpoint:
 
 
  * `audio_clip[uploaded_data]` (required)
@@ -127,11 +127,11 @@ The same parameters are used for either endpoint:
  * `audio_clip[title]`
   The title for the audio clip.
 
- * `audio_clip[recorded_at]` 
+ * `audio_clip[recorded_at]`
   The time that the clip was recorded, in "YYYY-MM-DD HH:MM:SS ±HHMM" format.
 
  * `audio_clip[tag_list]`
-  The tags to associate with the audio clip. These should be comma separated, and use quotes if the tag itself contains a comma. 
+  The tags to associate with the audio clip. These should be comma separated, and use quotes if the tag itself contains a comma.
 
  * `audio_clip[category_id]`
   The category to associate with the audio clip, obtained from `GET /categories/boos`
@@ -152,7 +152,7 @@ If public_location is true, the server expects these values to also be completed
 
 ### Updating audio clips ###
 
-You can update audio clips by sending a PUT request to the boo's location : 
+You can update audio clips by sending a PUT request to the boo's location :
 
 `PUT /audio_clips/*audio_clip_id*`
 

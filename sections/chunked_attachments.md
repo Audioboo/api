@@ -1,6 +1,6 @@
 # Chunked Attachments
 
-Instead of creating boos or private messages by sending a single monolithic request containing the audio & image attachments, it is possible to break up the upload data into separate requests.  This is particularly useful in mobile apps where the data connection may be unreliable and/or slow.
+Instead of creating audio clips or private messages by sending a single monolithic request containing the audio & image attachments, it is possible to break up the upload data into separate requests. This is particularly useful in mobile apps where the data connection may be unreliable and/or slow.
 
 
 You would normally perform `POST /audio_clips` containing :
@@ -15,7 +15,7 @@ You would normally perform `POST /audio_clips` containing :
 }
 ```
 
-Using chunked uploads, you would create a chunked attachment, receive an id in return, continue to update that attachment piece by piece, and then finish creating the audio clip, using the attachment id in place of the file data : 
+Using chunked uploads, you would create a chunked attachment, receive an id in return, continue to update that attachment piece by piece, and then finish creating the audio clip, using the attachment id in place of the file data :
 
 ```json
 {

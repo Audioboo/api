@@ -7,7 +7,7 @@ To make API calls that are marked as authenticated you will need to ensure your 
 ## OAuth Scheme ##
 The API supports the OAuth standard to make authenticated calls on behalf of a user. To find out more about the OAuth specification and to find a library that implements it in your language, see http://oauth.net/.
 
-You should use OAuth 1.0A to make your requests.  You might like to examine our [example Ruby code](https://github.com/Audioboo/audioboo-ruby-oauth) to see how things are supposed to work.
+You should use OAuth 1.0A to make your requests.  You might like to examine our [example Ruby code](https://github.com/audioboo/audioboo-ruby-oauth) to see how things are supposed to work.
 
 
 ## Consumer Keys ##
@@ -32,7 +32,7 @@ Multipart requests should be signed according to the [OAuth Request Body Hash ex
 
 
 ## Private Authentication Scheme ##
-We initially implemented the private scheme for the original iPhone application and it allows authenticated API calls to be made without being linked to a particular user. When posting a boo in this state it will appear as an anonymous boo on the site (i.e. from "The BooBot"). We record the source of clips and when linked in the future all past anonymous boos will be transferred to the User.
+We initially implemented the private scheme for the original iPhone application and it allows authenticated API calls to be made without being linked to a particular user. When posting a boo in this state it will appear as an anonymous boo on the site (i.e. from "The BooBot"). We record the source of clips and when linked in the future all past anonymous audio clips will be transferred to the User.
 
 OAuth has no mechanism to allow authenticated but anonymous calls to be made, so any boo posted will immediately belong to a user.
 
