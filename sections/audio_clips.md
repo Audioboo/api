@@ -92,6 +92,18 @@ If you use:
 
 Then it will produce a KML with a tour of the most recent clips.
 
+#### V2 Featured Feeds ####
+
+When requesting with `Accept: application/json; version=2`, the following endpoints are available: 
+Retrieve all featured boos, across all featured-categories:
+
+  * `http://api.audioboom.com/audio_clips/category_featured`
+
+Retrieve all boos in featured channels:
+
+  * `http://api.audioboom.com/audio_clips/channel_featured`
+
+
 ### Audio clip details ###
 
  * `GET /audio_clips/*audio_clip_id*`
