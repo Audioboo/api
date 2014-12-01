@@ -15,7 +15,7 @@ You can specify a `find[user_id]` parameter to limit the results to a particular
 
 `GET /account/followers?find[user_id]=11`
 
-You can supply multiple, comma-separated id's to restrict to a series of users, to find if any of the Audioboo team are following you, try:
+You can supply multiple, comma-separated id's to restrict to a series of users, to find if any of the audioBoom team are following you, try:
 
 `GET /account/followers?find[user_id]=12,17,5,30,16`
 

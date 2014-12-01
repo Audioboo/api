@@ -2,7 +2,7 @@
 
 ## Things to know / remember ##
 
-The API is REST-based.   All requests follow a standard format, see the [api introduction](https://github.com/audioboo/api/blob/master/sections/request_formats.md) for an overview of how to perform these requests.
+The API is REST-based.   All requests follow a standard format, see the [api introduction](https://github.com/audioboom/api/blob/master/sections/request_formats.md) for an overview of how to perform these requests.
 
 All parts of a URL in bold are parameters that should be replaced before making calls!
 
@@ -12,14 +12,14 @@ Any `/account/...` urls will act on the user corresponding to the OAuth access t
 
 The different API endpoints are broken up by section :
 
-### [Posts / AudioClips](https://github.com/audioboo/api/blob/master/sections/audio_clips.md)
-### [Followers](https://github.com/audioboo/api/blob/master/sections/followers.md)
-### [Messages](https://github.com/audioboo/api/blob/master/sections/messages.md)
-### [Users](https://github.com/audioboo/api/blob/master/sections/users.md)
-### [Playlists](https://github.com/audioboo/api/blob/master/sections/playlists.md)
-### [Favourites](https://github.com/audioboo/api/blob/master/sections/favourites.md)
-### [Channels](https://github.com/audioboo/api/blob/master/sections/channels.md)
-### [Uploading Chunked (Partial) Files](https://github.com/audioboo/api/blob/master/sections/chunked_attachments.md)
+### [Posts / AudioClips](https://github.com/audioboom/api/blob/master/sections/audio_clips.md)
+### [Followers](https://github.com/audioboom/api/blob/master/sections/followers.md)
+### [Messages](https://github.com/audioboom/api/blob/master/sections/messages.md)
+### [Users](https://github.com/audioboom/api/blob/master/sections/users.md)
+### [Playlists](https://github.com/audioboom/api/blob/master/sections/playlists.md)
+### [Favourites](https://github.com/audioboom/api/blob/master/sections/favourites.md)
+### [Channels](https://github.com/audioboom/api/blob/master/sections/channels.md)
+### [Uploading Chunked (Partial) Files](https://github.com/audioboom/api/blob/master/sections/chunked_attachments.md)
 
 ----
 

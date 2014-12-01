@@ -1,10 +1,10 @@
-# Audioboo Categories
+# audioBoom Categories
 
 Posts and channels are categorized into different areas. You can obtain lists of them via the Categories API.
 
 Get Categories
 ----
-`GET /categories` Returns a list of categories used on Audioboo
+`GET /categories` Returns a list of categories used on audioBoom
 Certain categories are only available for audio clips or for channels, by default this method only returns channel categories. You should filter the result set to only include the type you are interested in by using one of :
 
 * `GET /categories/channels`
@@ -55,8 +55,8 @@ Show category contents
             "channels": [
                 {
                     "created_at": "2010-06-25T11:00:35Z",
-                    "description": "Welcome to BBC London\u2019s Audioboo page.  \nHere you\u2019ll find highlights and additional material from our newsroom right in the heart of the capital.  Contributions from our reporters and from you.\nGot a story you think we should tell?  \nGet in touch by recording or uploading your story by using the green button or by calling \n0118 413 8272\nBy posting here you agree to your boo being used by BBC London.\nwww.bbc.co.uk/london\n",
-                    "formatted_description": "<p>Welcome to BBC London\u2019s Audioboo page.  </p>\n\n<p>Here you\u2019ll find highlights and additional material from our newsroom right in the heart of the capital.  Contributions from our reporters and from you.</p>\n\n<p>Got a story you think we should tell?  </p>\n\n<p>Get in touch by recording or uploading your story by using the green button or by calling </p>\n\n<h1>0118 413 8272</h1>\n\n<p>By posting here you agree to your boo being used by BBC London.</p>\n\n<p><a href=\"http://www.bbc.co.uk/london\">www.bbc.co.uk/london</a></p>\n",
+                    "description": "Welcome to BBC London\u2019s audioBoom page.  \nHere you\u2019ll find highlights and additional material from our newsroom right in the heart of the capital.  Contributions from our reporters and from you.\nGot a story you think we should tell?  \nGet in touch by recording or uploading your story by using the green button or by calling \n0118 413 8272\nBy posting here you agree to your boo being used by BBC London.\nwww.bbc.co.uk/london\n",
+                    "formatted_description": "<p>Welcome to BBC London\u2019s audioBoom page.  </p>\n\n<p>Here you\u2019ll find highlights and additional material from our newsroom right in the heart of the capital.  Contributions from our reporters and from you.</p>\n\n<p>Got a story you think we should tell?  </p>\n\n<p>Get in touch by recording or uploading your story by using the green button or by calling </p>\n\n<h1>0118 413 8272</h1>\n\n<p>By posting here you agree to your boo being used by BBC London.</p>\n\n<p><a href=\"http://www.bbc.co.uk/london\">www.bbc.co.uk/london</a></p>\n",
                     "id": 49774,
                     "submission_style": "moderated",
                     "title": "BBC London's News",

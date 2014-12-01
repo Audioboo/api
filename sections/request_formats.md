@@ -3,16 +3,16 @@
 # API Call Format #
 
 ## Request URLs ##
-Being a REST-style API, all calls are made to paths based on the resource you're accessing. For more specifics on individual resources, see the [API Reference](https://github.com/audioboo/api/blob/master/sections/reference_index.md).
+Being a REST-style API, all calls are made to paths based on the resource you're accessing. For more specifics on individual resources, see the [API Reference](https://github.com/audioboom/api/blob/master/sections/reference_index.md).
 
 For example, if you're trying to access a list of clips a user is following, you'll make HTTP `GET` request to:
 
-`https://api.audioboo.fm/users/12/audio_clips/followed`
+`https://api.audioboom.com/users/12/audio_clips/followed`
 
 where 12 is the id of the user you're interested in.
 
 If you were trying to upload a clip to the linked user, you'd make a HTTP `POST` to:
-`https://api.audioboo.fm/account/audio_clips`
+`https://api.audioboom.com/account/audio_clips`
 
 ## Standard Parameters ##
 You should always include a `version` parameter in your Accept header, to maintain compatibility when we update the API.  The current public version is `1`.  For example, `Accept: application/json; version=1`.
@@ -28,10 +28,10 @@ Parameters required by the API call can be submitted in one of a few ways:
  _NOTE:_ multipart/form-data _must_ be used when posting large fields, such as an uploaded audio-file.
 
 ## Response Encoding ##
-JSON is used as the default response type, other formats have been deprecated/
+JSON is used as the default response type, other formats have been deprecated.
 
 ###Examples:
-`curl https://api.audioboo.fm/audio_clips`
+`curl https://api.audioboom.com/audio_clips`
 
 ```json
 {
@@ -53,19 +53,19 @@ JSON is used as the default response type, other formats have been deprecated/
                 {
                     "display_tag": "beach", 
                     "normalised_tag": "beach", 
-                    "url": "http://audioboo.fm/tag/beach"
+                    "url": "http://audioboom.com/tag/beach"
                 }, {
                     "display_tag": "summer", 
                     "normalised_tag": "summer", 
-                    "url": "http://audioboo.fm/tag/summer"
+                    "url": "http://audioboom.com/tag/summer"
                 }
             ], 
             "recorded_at": "2009-04-29T16:28:14Z", 
             "uploaded_at": "2009-04-29T20:22:29Z", 
             "urls": {
-                "detail": "http://audioboo.fm/boos/12345-new-romney-beach", 
-                "high_mp3": "http://audioboo.fm/boos/12345-new-romney-beach.mp3", 
-                "image": "http://audioboo.fm/files/images/0004/4474/clipAttachment.jpg"
+                "detail": "http://audioboom.com/boos/12345-new-romney-beach", 
+                "high_mp3": "http://audioboom.com/boos/12345-new-romney-beach.mp3", 
+                "image": "http://audioboom.com/files/images/0004/4474/clipAttachment.jpg"
             }
 			...
 ```

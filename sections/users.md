@@ -42,11 +42,11 @@
             },  
             "following_enabled": true,
             "messaging_enabled": true,
-            "profile_description": "Audioboo dev, general code monkey.", 
+            "profile_description": "audioBoom dev, general code monkey.", 
             "profile_location": "London", 
             "urls": {
-                "profile": "http://audioboo.fm/jdelStrother", 
-                "website": "http://audioboo.fm"
+                "profile": "http://audioboom.com/jdelStrother", 
+                "website": "http://audioboom.com"
             }, 
         }
     }, 
@@ -60,5 +60,5 @@
   * `user[profile_location]` - geographic location
   * `user[profile_description]` - profile description, limited to 255 characters
   * `user[profile_website_url]` - the user's website address
-  * `user[profile_picture_data]` - a profile image, as a [multipart file](https://github.com/audioboo/api/blob/master/sections/reference_index.md#file-uploads)
+  * `user[profile_picture_data]` - a profile image, as a [multipart file](https://github.com/audioboom/api/blob/master/sections/reference_index.md#file-uploads)
   

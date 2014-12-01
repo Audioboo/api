@@ -1,10 +1,10 @@
 ## Messaging ##
 
-All of these calls require an [authenticated user](https://github.com/audioboo/api/blob/master/sections/authentication.md).
+All of these calls require an [authenticated user](https://github.com/audioboom/api/blob/master/sections/authentication.md).
 
 ### Inbox ###
 
-The messages in the user's inbox. [Paginated](https://github.com/audioboo/api/blob/master/sections/pagination.md) and in chronological order (most recent first)
+The messages in the user's inbox. [Paginated](https://github.com/audioboom/api/blob/master/sections/pagination.md) and in chronological order (most recent first)
  * GET /account/inbox
 
 ### Message details ###

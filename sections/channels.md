@@ -23,9 +23,9 @@
         "writable": true,
         "parent_channel_id": null,
         "created_at": "2013-02-12T16:51:09Z",
-        "title": "Audioboo",
-        "description": "The Audioboo team here. Bringing you the latest from the office and everywhere else. \nFollow us for updates, offers, competitions and our own special version of community outreach. Get in touch either here, @Audioboo or FB. We love to listen.\nLondon\nhttp://audioboo.fm\n",
-        "formatted_description": "<p>The Audioboo team here. Bringing you the latest from the office and everywhere else. \nFollow us for updates, offers, competitions and our own special version of community outreach. Get in touch either here, @Audioboo or FB. We love to listen.\nLondon\n<a href=\"http://audioboo.fm\">http://audioboo.fm</a></p>\n",
+        "title": "audioBoom",
+        "description": "The audioBoom team here. Bringing you the latest from the office and everywhere else. \nFollow us for updates, offers, competitions and our own special version of community outreach. Get in touch either here, @audioBoom or FB. We love to listen.\nLondon\nhttp://audioboom.com\n",
+        "formatted_description": "<p>The audioBoom team here. Bringing you the latest from the office and everywhere else. \nFollow us for updates, offers, competitions and our own special version of community outreach. Get in touch either here, @audioBoom or FB. We love to listen.\nLondon\n<a href=\"http://audioboom.com\">http://audioboom.com</a></p>\n",
         "urls": {
             "logo_image": {
                 "original": "http://d15mj6e6qmt1na.cloudfront.net/files/images/0405/4536/audioboo_logo.jpg"

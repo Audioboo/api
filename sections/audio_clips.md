@@ -2,7 +2,7 @@
 
 ### All audio clips ###
 
-These return [paginated](https://github.com/audioboo/api/blob/master/sections/pagination.md) responses.
+These return [paginated](https://github.com/audioboom/api/blob/master/sections/pagination.md) responses.
 
  * `GET /audio_clips`
   returns all audio clips in chronological order (most recent first)
@@ -15,13 +15,13 @@ These return [paginated](https://github.com/audioboo/api/blob/master/sections/pa
   returns the most popular audio clips ordered by recent listens
 
 ### Tagged audio clips ###
-This call will return a [paginated](https://github.com/audioboo/api/blob/master/sections/pagination.md) response.
+This call will return a [paginated](https://github.com/audioboom/api/blob/master/sections/pagination.md) response.
 
  * `GET /tag/*tag*/audio_clips`
   returns all the audio clips tagged with the specified tag.
 
 ###User's audio clips###
-These calls will return [paginated](https://github.com/audioboo/api/blob/master/sections/pagination.md) responses.
+These calls will return [paginated](https://github.com/audioboom/api/blob/master/sections/pagination.md) responses.
 
  * `GET /users/*user_id*/audio_clips`
   returns the audio clips uploaded by the user specified by *user_id*.
@@ -33,7 +33,7 @@ These calls will return [paginated](https://github.com/audioboo/api/blob/master/
   returns the audio_clips uploaded by the user linked to the OAuth access token used.
 
 ### User's followed clips ###
-These calls will return [paginated](https://github.com/audioboo/api/blob/master/sections/pagination.md) responses.
+These calls will return [paginated](https://github.com/audioboom/api/blob/master/sections/pagination.md) responses.
 
  * `GET /users/*user_id*/audio_clips/followed`
   returns the audio clips uploaded by users followed by the user specified by *user_id*.
@@ -82,13 +82,13 @@ Just "for fun" there is a KML generator which you can plug in to google earth. A
 
 Add a "network link" in google earth to this url
 
- * `http://api.audioboo.fm/audio_clips/located.kml`
+ * `http://api.audioboom.com/audio_clips/located.kml`
 
-And you'll get the push-pins / audioboo icons on the map. You can even specify the view based refresh and google earth will automatically load clips from the viewport as you move around the map.
+And you'll get the push-pins / audioBoom icons on the map. You can even specify the view based refresh and google earth will automatically load clips from the viewport as you move around the map.
 
 If you use:
 
- * `http://api.audioboo.fm/audio_clips/located.kml?tour=true`
+ * `http://api.audioboom.com/audio_clips/located.kml?tour=true`
 
 Then it will produce a KML with a tour of the most recent clips.
 
@@ -116,13 +116,13 @@ The same parameters are used for either endpoint:
 
 
  * `audio_clip[uploaded_data]` (required)
-  The uploaded audio data as a multipart file, see [Audio Formats](https://github.com/audioboo/api/blob/master/sections/reference_index.md#audio-formats) and [File Uploads](https://github.com/audioboo/api/blob/master/sections/reference_index.md#file-uploads).
+  The uploaded audio data as a multipart file, see [Audio Formats](https://github.com/audioboom/api/blob/master/sections/reference_index.md#audio-formats) and [File Uploads](https://github.com/audioboom/api/blob/master/sections/reference_index.md#file-uploads).
 
  * `audio_clip[uuid]` (recommended)
   A [universally unique identifier](http://en.wikipedia.org/wiki/Universally_unique_identifier), to aid the server in duplicate-detection.  The uuid must not contain spaces or a newline characters.
 
  * `audio_clip[uploaded_image]`
-  The uploaded image data as a multipart file, see see [Image Formats](https://github.com/audioboo/api/blob/master/sections/reference_index.md#image-formats) and [File Uploads](https://github.com/audioboo/api/blob/master/sections/reference_index.md#file-uploads).
+  The uploaded image data as a multipart file, see see [Image Formats](https://github.com/audioboom/api/blob/master/sections/reference_index.md#image-formats) and [File Uploads](https://github.com/audioboom/api/blob/master/sections/reference_index.md#file-uploads).
 
  * `audio_clip[title]`
   The title for the audio clip.

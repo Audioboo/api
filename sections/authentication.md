@@ -1,4 +1,4 @@
-# How to authenticate requests made to the audioboo.fm api
+# How to authenticate requests made to the audioboom.com api
 
 # API Authentication #
 
@@ -7,25 +7,25 @@ To make API calls that are marked as authenticated you will need to ensure your 
 ## OAuth Scheme ##
 The API supports the OAuth standard to make authenticated calls on behalf of a user. To find out more about the OAuth specification and to find a library that implements it in your language, see http://oauth.net/.
 
-You should use OAuth 1.0A to make your requests.  You might like to examine our [example Ruby code](https://github.com/audioboo/audioboo-ruby-oauth) to see how things are supposed to work.
+You should use OAuth 1.0A to make your requests.  You might like to examine our [example Ruby code](https://github.com/audioBoom/audioboo-ruby-oauth) to see how things are supposed to work.
 
 
 ## Consumer Keys ##
 To make authenticated requests you'll need to get hold of a consumer-token key and secret. These are long seemingly random strings that ensure we can identify your application when it makes calls.
 
-To register for key and token, head over to https://audioboo.fm/account/services and click "Request new API Key". This will ask for some information regarding the application you're writing and, once submitted, should provide you with the token key and secret.
+To register for key and token, head over to https://audioboom.com/account/services and click "Request new API Key". This will ask for some information regarding the application you're writing and, once submitted, should provide you with the token key and secret.
 
 ## OAuth Request URLs ##
-When configuring your OAuth library, you will require URLs to access the OAuth calls. As we use standard paths, most libraries should just request the site's base address, which is `https://api.audioboo.fm/`
+When configuring your OAuth library, you will require URLs to access the OAuth calls. As we use standard paths, most libraries should just request the site's base address, which is `https://api.audioboom.com/`
 
 
 For completeness, the three specific OAuth URLs are;
 
-* Request Token URL: `https://api.audioboo.fm/oauth/request_token`
+* Request Token URL: `https://api.audioboom.com/oauth/request_token`
 
-* Authorization URL: `https://api.audioboo.fm/oauth/authorize`
+* Authorization URL: `https://api.audioboom.com/oauth/authorize`
 
-* Access Token URL: `https://api.audioboo.fm/oauth/access_token`
+* Access Token URL: `https://api.audioboom.com/oauth/access_token`
 
 ## Signing multipart uploads ##
 Multipart requests should be signed according to the [OAuth Request Body Hash extension](http://oauth.googlecode.com/svn/spec/ext/body_hash/1.0/oauth-bodyhash.html).
@@ -36,4 +36,4 @@ We initially implemented the private scheme for the original iPhone application 
 
 OAuth has no mechanism to allow authenticated but anonymous calls to be made, so any boo posted will immediately belong to a user.
 
-If you're interested in using the private authentication scheme to mirror the behaviour of the iPhone application, contact info@audioboo.fm.
+If you're interested in using the private authentication scheme to mirror the behaviour of the iPhone application, contact info@audioboom.com.

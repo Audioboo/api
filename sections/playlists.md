@@ -23,7 +23,7 @@ This call will create a playlist for the current authenticated user.
   Parameters accepted:
 
   * `playlist[title]` (required) Name of playlist
-  * `playlist[image_data]` (optional) The uploaded image data as a multipart file, see see [Image Formats](https://github.com/audioboo/api/blob/master/sections/reference_index.md#image-formats) and [File Uploads](https://github.com/audioboo/api/blob/master/sections/reference_index.md#file-uploads).
+  * `playlist[image_data]` (optional) The uploaded image data as a multipart file, see see [Image Formats](https://github.com/audioboom/api/blob/master/sections/reference_index.md#image-formats) and [File Uploads](https://github.com/audioboom/api/blob/master/sections/reference_index.md#file-uploads).
 
 
 ### Update playlist (Authenticated) ###
@@ -35,7 +35,7 @@ This call will update a playlist details.
   Parameters accepted:
 
   * `playlist[title]` (required) Name of playlist
-  * `playlist[image_data]` (optional) The uploaded image data as a multipart file, see see [Image Formats](https://github.com/audioboo/api/blob/master/sections/reference_index.md#image-formats) and [File Uploads](https://github.com/audioboo/api/blob/master/sections/reference_index.md#file-uploads).
+  * `playlist[image_data]` (optional) The uploaded image data as a multipart file, see see [Image Formats](https://github.com/audioboom/api/blob/master/sections/reference_index.md#image-formats) and [File Uploads](https://github.com/audioboom/api/blob/master/sections/reference_index.md#file-uploads).
 
 
 ### Deleting a playlist (Authenticated) ###
