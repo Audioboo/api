@@ -1,3 +1,12 @@
+## Recommended followers ##
+
+Recommended followers for the current user can be found using `GET /account/followings/recommended`.  It can be filtered down to specific categories with the `category_ids[]` parameter - for example:
+
+`GET /account/followings/recommended?category_ids[]=60`
+
+to fetch sport-related recommendations.
+
+
 ## Listing followers / following users ##
 Just to clarify:
 
