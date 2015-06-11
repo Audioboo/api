@@ -56,6 +56,9 @@
 
   `PUT /account` accepts the following parameters:
   
+  * `user[username]` - the user's login name
+  * `user[email]` - the user's email address
+  * `user[password]` - the user's password
   * `user[profile_name]` - the user's full name, for display purposes
   * `user[profile_location]` - geographic location
   * `user[profile_description]` - profile description, limited to 255 characters
