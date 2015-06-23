@@ -140,7 +140,7 @@ The same parameters are used for either endpoint:
  * `audio_clip[uploaded_image]`
   The uploaded image data as a multipart file, see see [Image Formats](https://github.com/audioboom/api/blob/master/sections/reference_index.md#image-formats) and [File Uploads](https://github.com/audioboom/api/blob/master/sections/reference_index.md#file-uploads).
 
- * `audio_clip[title]`
+ * `audio_clip[title]` (required)
   The title for the audio clip.
 
  * `audio_clip[recorded_at]`
