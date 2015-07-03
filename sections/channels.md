@@ -49,3 +49,8 @@
 
  * `GET /channels/*channel_id*/audio_clips`
   This will return the audio_clips for the channel specified by the *channel_id* parameter.
+
+### Channel audio clips ###
+
+ * `GET /channels/*channel_id*/child_channels`
+  This will return a list of child channels for the channel specified by the *channel_id* parameter.
