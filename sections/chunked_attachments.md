@@ -68,6 +68,8 @@ You can then continue to upload chunks to that attachment id:
 
 Once you have sent all the different chunks of the file, you can use the attachment id in `POST /audio_clips` or `POST /account/outbox`.
 
+### Fingerprinting
+
 For verification purposes, it is useful to include a SHA1 hexdigested fingerprint of the entire file - eg:
 
 ```json
