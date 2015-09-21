@@ -72,6 +72,9 @@ Adding favorite categories
 Required parameters:
 * `category_ids[]` - an array of category ids to favorite.
 
+Optional parameters:
+* `replace_all` - include `replace_all=1` to replace any existing favorites with the categories you've supplied in `category_ids[]`.
+
 
 Removing favorite categories
 ---
