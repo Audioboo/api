@@ -27,6 +27,9 @@ For completeness, the three specific OAuth URLs are;
 
 * Access Token URL: `https://api.audioboom.com/oauth/access_token`
 
+Request tokens and access tokens must be accessed via POST requests.
+
+
 ## Signing multipart uploads ##
 Multipart requests should be signed according to the [OAuth Request Body Hash extension](http://oauth.googlecode.com/svn/spec/ext/body_hash/1.0/oauth-bodyhash.html).
 

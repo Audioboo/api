@@ -94,15 +94,19 @@ Then it will produce a KML with a tour of the most recent clips.
 
 #### V2 Featured Feeds ####
 
-When requesting with `Accept: application/json; version=2`, the following endpoints are available: 
-Retrieve all featured boos, across all featured-categories:
+When requesting with `Accept: application/json; version=2`, the following endpoints are available:
+
+Retrieve all featured boos, across all categories:
 
   * `http://api.audioboom.com/audio_clips/category_featured`
+  
+  Categories can be explicitly requested by passing an array of their ids - eg `?category_ids[]=60&category_ids[]=70`
 
 Retrieve all boos in featured channels:
 
   * `http://api.audioboom.com/audio_clips/channel_featured`
-
+  
+  Again, Categories can be explicitly requested by passing an array of their ids - eg `?category_ids[]=60&category_ids[]=70`
 
 ### Audio clip details ###
 
@@ -136,7 +140,7 @@ The same parameters are used for either endpoint:
  * `audio_clip[uploaded_image]`
   The uploaded image data as a multipart file, see see [Image Formats](https://github.com/audioboom/api/blob/master/sections/reference_index.md#image-formats) and [File Uploads](https://github.com/audioboom/api/blob/master/sections/reference_index.md#file-uploads).
 
- * `audio_clip[title]`
+ * `audio_clip[title]` (required)
   The title for the audio clip.
 
  * `audio_clip[recorded_at]`

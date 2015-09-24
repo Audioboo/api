@@ -57,3 +57,31 @@ Show category contents
 `GET /categories/<id>/channels` Returns all channels within the given category.
   
 `GET /categories/<id>/channels/featured` Returns all featured channels within the given category.
+
+
+# Favoriting Categories
+
+
+`GET /account/categories`: Returns a list of the currently-favorited categories for the authenticated user.
+
+Adding favorite categories
+---
+
+`POST /account/categories`
+
+Required parameters:
+* `category_ids[]` - an array of category ids to favorite.
+
+Optional parameters:
+* `replace_all` - include `replace_all=1` to replace any existing favorites with the categories you've supplied in `category_ids[]`.
+
+
+Removing favorite categories
+---
+
+`DELETE /account/categories`
+
+Required parameters:
+* `category_ids[]` - an array of category ids to unfavorite.
+
+

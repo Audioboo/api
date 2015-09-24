@@ -48,11 +48,13 @@ Using chunked uploads, you would create a chunked attachment, receive an id in r
 
 `size` should be the total size of the original file.  `chunk` is a multipart file consisting of a portion of the original file, and `chunk_offset` is the byte-offset of where this portion is taken from.
 
-You should receive a 201 response with a Location header containing the newly-created attachment's id
+You should receive a 201 response with a Location header containing the newly-created attachment's id.
 
 ### Updating chunked attachments:
 
-`POST /attachments/9812`
+You can then continue to upload chunks to that attachment id:
+
+`PUT /attachments/9812`
 ```json
 {
 	"attachment": {
@@ -65,3 +67,20 @@ You should receive a 201 response with a Location header containing the newly-cr
 `chunk` is a multipart file consisting of a new portion of the original file, and `chunk_offset` is the byte-offset of where this portion is taken from.
 
 Once you have sent all the different chunks of the file, you can use the attachment id in `POST /audio_clips` or `POST /account/outbox`.
+
+### Fingerprinting
+
+For verification purposes, it is useful to include a SHA1 hexdigested fingerprint of the entire file - eg:
+
+```json
+{
+	"audio_clip": {
+		"title": "foo",
+		"uploaded_data": {
+			"chunked_attachment_id": 10001,
+			"fingerprint": "e4eef1707a21faea8f2a88c663e38a27b97b4b0a"
+		},
+}
+```
+
+If the `fingerprint` is present, we can then verify that all chunks are present and assembled correctly.
