@@ -54,3 +54,13 @@
 
  * `GET /channels/*channel_id*/child_channels`
   This will return a list of child channels for the channel specified by the *channel_id* parameter.
+
+### Recommended Channels (API Version 2) ###
+  
+  * `GET /channels/recommended`
+
+  Returns a list of recommended channels.   Can be scoped to specific categories with the `category_ids[]` parameter - for example:
+
+  `GET /channels/recommended?category_ids[]=60`
+
+  to fetch sport-related recommendations.
