@@ -9,7 +9,7 @@ The API supports the OAuth standard to make authenticated calls on behalf of a u
 
 You should use OAuth 2.0 to make your requests.  You might like to examine our [example Ruby code](https://github.com/audioBoom/audioboo-ruby-oauth) to see how things are supposed to work.
 
-We support the 'Authorization Code' flow which is described nicely in this article `https://aaronparecki.com/2012/07/29/2/oauth2-simplified#authorization`
+We support the 'Authorization Code' flow which is described nicely in [this article](https://aaronparecki.com/2012/07/29/2/oauth2-simplified#authorization)
 
 ## Consumer Keys ##
 To make authenticated requests you'll need to get hold of a consumer-token key and secret. These are long seemingly random strings that ensure we can identify your application when it makes calls.
