@@ -19,8 +19,8 @@
 "body": {
     "channel": {
         "id": 1054469,
-        "submission_style": "moderated",
-        "writable": true,
+        "submission_style": "none",
+        "writable": false,
         "parent_channel_id": null,
         "created_at": "2013-02-12T16:51:09Z",
         "title": "audioBoom",
@@ -39,8 +39,7 @@
             "title": "Community",
             "description": ""
         },
-        "channel_clips_count": 36,
-        "moderation_clips_count": 0
+        "channel_clips_count": 36
     }
 }
 ```
