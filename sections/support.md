@@ -3,7 +3,7 @@
 # Support #
 
 ## Mailing Lists ##
-You can ask for help & discuss the API with fellow developers on the [audioBoom Discussion](http://groups.google.com/group/audioBoom-api-discuss) google group, and the discussion list should be your first port-of-call with any problems. At a minimum the audioBoom devs _should_ also be subscribed to this list.
+You can ask for help & discuss the API with fellow developers on the [audioBoom Discussion](http://groups.google.com/group/audioBoo-api-discuss) google group, and the discussion list should be your first port-of-call with any problems. At a minimum the audioBoom devs _should_ also be subscribed to this list.
 
 *Make sure you search for existing open discussions on the same topic before starting a new thread*
 
