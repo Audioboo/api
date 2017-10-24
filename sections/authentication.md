@@ -23,4 +23,4 @@ For completeness, the two specific OAuth URLs are;
 
 * Authorization URL: `https://api.audioboom.com/oauth/authorize` (GET)
 
-* Access Token URL: `https://api.audioboom.com/oauth/access_token` (POST)
+* Access Token URL: `https://api.audioboom.com/oauth/token` (POST)
