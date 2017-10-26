@@ -43,4 +43,4 @@ We will attempt to transcode any audio file that you throw at us.  We explicitly
 
 ### File Uploads ###
 
-Files should be sent using HTTP multipart encoding.  You must include a 'filename' parameter in the Content-Disposition multipart header, to ensure that our webserver processes it as a file.  If you're authenticating via OAuth, be sure to use the [Body Hash extension](http://oauth.googlecode.com/svn/spec/ext/body_hash/1.0/oauth-bodyhash.html).
+Files should be sent using HTTP multipart encoding.  You must include a 'filename' parameter in the Content-Disposition multipart header, to ensure that our webserver processes it as a file.  If you're authenticating via OAuth 1, be sure to use the [Body Hash extension](https://tools.ietf.org/html/draft-eaton-oauth-bodyhash-00).

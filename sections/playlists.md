@@ -65,7 +65,7 @@ This call will remove an audioclip from a playlist.
 
 ### Updating the position of audioclip within the playlist (Authenticated) ###
 
- * `POST /playlists/*playlist_id*/memberships/*membership_id*`
+ * `PUT /playlists/*playlist_id*/memberships/*membership_id*`
   
 This call will update the audioclip position within the playlist.
 
