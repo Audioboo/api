@@ -1,4 +1,4 @@
-## Audio Clips (Boos)##
+## Audio Clips (Episodes)##
 
 ### All audio clips ###
 
@@ -20,7 +20,7 @@ This call will return a [paginated](https://github.com/audioboom/api/blob/master
  * `GET /tag/*tag*/audio_clips`
   returns all the audio clips tagged with the specified tag.
 
-###User's audio clips###
+### User's audio clips ###
 These calls will return [paginated](https://github.com/audioboom/api/blob/master/sections/pagination.md) responses.
 
  * `GET /users/*user_id*/audio_clips`
@@ -96,13 +96,13 @@ Then it will produce a KML with a tour of the most recent clips.
 
 When requesting with `Accept: application/json; version=2`, the following endpoints are available:
 
-Retrieve all featured boos, across all categories:
+Retrieve all featured clips, across all categories:
 
   * `http://api.audioboom.com/audio_clips/category_featured`
   
   Categories can be explicitly requested by passing an array of their ids - eg `?category_ids[]=60&category_ids[]=70`
 
-Retrieve all boos in featured channels:
+Retrieve all clips in featured channels:
 
   * `http://api.audioboom.com/audio_clips/channel_featured`
   
