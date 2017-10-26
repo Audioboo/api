@@ -19,6 +19,7 @@ The different API endpoints are broken up by section :
 ### [Playlists](https://github.com/audioboom/api/blob/master/sections/playlists.md)
 ### [Favourites](https://github.com/audioboom/api/blob/master/sections/favourites.md)
 ### [Channels](https://github.com/audioboom/api/blob/master/sections/channels.md)
+### [Comments](https://github.com/audioboom/api/blob/master/sections/comments.md)
 ### [Uploading Chunked (Partial) Files](https://github.com/audioboom/api/blob/master/sections/chunked_attachments.md)
 ### [Regions](https://github.com/audioboom/api/blob/master/sections/regions.md)
 
