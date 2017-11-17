@@ -52,6 +52,28 @@ The 'thumb' name is defined by the client, and just used to name the resulting i
 }
 ```
 
+## Version 2 differences
+
+Note that the image structure returned when hitting V2 APIs is somewhat different than in V1.
+
+By default the V2 API responds with the 'original' URL:
+
+```json
+"profile_image": {
+   "original": "https://d15mj6e6qmt1na.cloudfront.net/i/9746510"
+}
+```
+
+if you include an image hint (eg `image_size_hint[mini]=10x10`), you'll see the additional images defined within the same structure:
+
+```json
+"profile_image": {
+   "original": "https://d15mj6e6qmt1na.cloudfront.net/i/9746510",
+   "mini": "https://d15mj6e6qmt1na.cloudfront.net/i/9746510/50x50"
+}
+```
+
+
 ## Geometry strings
 
 A variety of formats are supported for the geometry string (the `10x10` part of `image_size_hint[foo]=10x10`).
