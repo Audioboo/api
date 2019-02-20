@@ -43,7 +43,7 @@ These calls will return [paginated](https://github.com/audioboom/api/blob/master
 
 ### Channel's clips ###
 
-`GET /channels/*channel_id*/audio_clips` returns audio clips for that particular channel.
+`GET /channels/*channel_id*/audio_clips` returns audio clips for that particular channel or podcast.
 
 
 
