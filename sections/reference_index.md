@@ -12,16 +12,18 @@ Any `/account/...` urls will act on the user corresponding to the OAuth access t
 
 The different API endpoints are broken up by section :
 
-### [Posts / AudioClips](https://github.com/audioboom/api/blob/master/sections/audio_clips.md)
-### [Followers](https://github.com/audioboom/api/blob/master/sections/followers.md)
-### [Messages](https://github.com/audioboom/api/blob/master/sections/messages.md)
+### [Audio Clips (Episodes)](https://github.com/audioboom/api/blob/master/sections/audio_clips.md)
 ### [Users](https://github.com/audioboom/api/blob/master/sections/users.md)
 ### [Playlists](https://github.com/audioboom/api/blob/master/sections/playlists.md)
-### [Favourites](https://github.com/audioboom/api/blob/master/sections/favourites.md)
-### [Channels](https://github.com/audioboom/api/blob/master/sections/channels.md)
-### [Comments](https://github.com/audioboom/api/blob/master/sections/comments.md)
+### [Channels (Podcasts)](https://github.com/audioboom/api/blob/master/sections/channels.md)
 ### [Uploading Chunked (Partial) Files](https://github.com/audioboom/api/blob/master/sections/chunked_attachments.md)
 ### [Regions](https://github.com/audioboom/api/blob/master/sections/regions.md)
+
+## Deprecated functionality:
+### [Followers](https://github.com/audioboom/api/blob/master/sections/followers.md)
+### [Favourites](https://github.com/audioboom/api/blob/master/sections/favourites.md)
+### [Comments](https://github.com/audioboom/api/blob/master/sections/comments.md)
+
 
 ----
 
