@@ -7,7 +7,7 @@ These return [paginated](https://github.com/audioboom/api/blob/master/sections/p
  * `GET /audio_clips`
   returns all audio clips in chronological order (most recent first)
  * `GET /audio_clips?find[query]=*query*`
-  searches for audio clips matching the *query* search term.
+  searches for audio clips matching the *query* plain-text search term.
   returns all audio clips in chronological order (most recent first)
  * `GET /audio_clips/featured`
   returns the editorially "featured" audio clips as appear on the web-site
