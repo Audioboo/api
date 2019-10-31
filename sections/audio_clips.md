@@ -146,25 +146,15 @@ The same parameters are used for either endpoint:
  * `audio_clip[recorded_at]`
   The time that the clip was recorded, in "YYYY-MM-DD HH:MM:SS ±HHMM" format.
 
- * `audio_clip[tag_list]`
-  The tags to associate with the audio clip. These should be comma separated, and use quotes if the tag itself contains a comma.
+ * `audio_clip[description]`
+  The plain-text description for the episode.  This is mutually exclusive with `audio_clip[episode_description_attributes]`.
+  
+ * `audio_clip[episode_description_attributes][html_description_source]`
+  The description for the episode, as HTML.  This is mutually exclusive with `audio_clip[description]`.
+  
+ * `audio_clip[episode_description_attributes][summary]`
+  The plain-text summary of the episode.  This is mutually exclusive with `audio_clip[description]`.
 
- * `audio_clip[category_id]`
-  The category to associate with the audio clip, obtained from `GET /categories/boos`
-
- * `audio_clip[public_location]`
-  Boolean value indicating if location should be public on the website. Use strings 'true' or 'false'.
-
-If public_location is true, the server expects these values to also be completed:
-
- * `audio_clip[location_latitude]`
-  The latitude value of the location, encoded as a string representation of a decimal number between -90.0 (south) to +90.0 (north).
-
- * `audio_clip[location_longitude]`
-  The longitude value of the location, encoded as a string representation of a decimal number between -180.0 (westwards) and 180.0 (eastwards).
-
- * `audio_clip[location_accuracy]`
-  The accuracy of the reading, in meters - omit this value if it's not available.
 
 ### Updating audio clips ###
 
