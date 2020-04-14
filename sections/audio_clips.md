@@ -46,52 +46,6 @@ These calls will return [paginated](https://github.com/audioboom/api/blob/master
 `GET /channels/*channel_id*/audio_clips` returns audio clips for that particular channel or podcast.
 
 
-
-### Clips by location ###
-
-#### Filtering for clips with location ####
-There is a feed of audio clips restricted only to those with a public location, which may be useful for generating maps of audio clips, etc.
-This can be accessed using a call to the URL:
-
- * `GET /audio_clips/located`
-
-#### Search by distance from point ####
-If you want to get a list of audio clips increasing near a specific long/lat point you can call this:
-
- * `GET /audio_clips/located?find[latitude]=*latitude*&find[longitude]=*longitude*`
-
-The results will be ordered by a function of recentness and closeness to the given point.
-
-#### Search for audio clips "nearby" ####
-You can search for clips nearby another clip:
-
- * `GET /audio_clips/*clip_id*/nearby`
-
-Which will return clips in the same order as clips returned from a long/lat point. For this and the clips from point call you'll also get a "bearing" and "distance" tag in the returned XML for each result which will tell you the bearing and distance of each result from the query location, using the haversine approximation. Don't know if that is useful, but it's there!
-
-#### Clips within a bounding box ####
-You can request all the clips that fall within an arbitrary bounding box.
-
- * `GET /audio_clips/located?BBOX=*west*,*south*,*east*,*north*`
-
-Pagination rules apply, so it's possible to retrieve *all* clips inside the box...
-
-#### Google Earth KML Feed ####
-
-Just "for fun" there is a KML generator which you can plug in to google earth. Absolutely unsupported and will potentially break in the future :-)
-
-Add a "network link" in google earth to this url
-
- * `http://api.audioboom.com/audio_clips/located.kml`
-
-And you'll get the push-pins / audioBoom icons on the map. You can even specify the view based refresh and google earth will automatically load clips from the viewport as you move around the map.
-
-If you use:
-
- * `http://api.audioboom.com/audio_clips/located.kml?tour=true`
-
-Then it will produce a KML with a tour of the most recent clips.
-
 #### V2 Featured Feeds ####
 
 When requesting with `Accept: application/json; version=2`, the following endpoints are available:
