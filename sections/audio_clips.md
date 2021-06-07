@@ -20,26 +20,6 @@ This call will return a [paginated](https://github.com/audioboom/api/blob/master
  * `GET /tag/*tag*/audio_clips`
   returns all the audio clips tagged with the specified tag.
 
-### User's audio clips ###
-These calls will return [paginated](https://github.com/audioboom/api/blob/master/sections/pagination.md) responses.
-
- * `GET /users/*user_id*/audio_clips`
-  returns the audio clips uploaded by the user specified by *user_id*.
-
- * `GET /audio_clips?username=*username*`
-  returns the audio clips uploaded by *username*.  If known, using the user's id is preferred, since it's guaranteed to never change.
-
- * `GET /account/audio_clips`
-  returns the audio_clips uploaded by the user linked to the OAuth access token used.
-
-### User's followed clips ###
-These calls will return [paginated](https://github.com/audioboom/api/blob/master/sections/pagination.md) responses.
-
- * `GET /users/*user_id*/audio_clips/followed`
-  returns the audio clips uploaded by users followed by the user specified by *user_id*.
-
- * `GET /account/audio_clips/followed`
-  returns the audio clips uploaded by users followed by the user linked to the OAuth access token used.
 
 ### Channel's clips ###
 
